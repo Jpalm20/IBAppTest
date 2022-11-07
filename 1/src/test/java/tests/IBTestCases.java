@@ -55,7 +55,7 @@ public class IBTestCases extends BaseTest {
         WebElement passwordInput = driver.findElement(By.id("password"));
         
         userNameInput.sendKeys("jonpalmieri2022");
-        passwordInput.sendKeys("Jonboy20");
+        passwordInput.sendKeys("{PW}");
         
         WebElement submitButton = driver.findElement(By.id("submitForm"));
         submitButton.click();
@@ -123,7 +123,7 @@ public class IBTestCases extends BaseTest {
             lastName.sendKeys("Palmieri");
             
             WebElement street1Main = driver.findElement(By.id("street1Main"));
-            street1Main.sendKeys("11 Danand Lane");
+            street1Main.sendKeys("12 Danand Lane");
             
             WebElement cityMain = driver.findElement(By.id("cityMain"));
             cityMain.sendKeys("Patterson");
@@ -141,7 +141,7 @@ public class IBTestCases extends BaseTest {
             numOfDependents.sendKeys("0");
             
             WebElement taxResidency1Number = driver.findElement(By.id("taxResidency1Number"));
-            taxResidency1Number.sendKeys("073881234");
+            taxResidency1Number.sendKeys("{SSN}");
             
             WebElement employmentType = driver.findElement(By.id("employmentType"));
             employmentType.sendKeys("Unemployed");
@@ -153,17 +153,17 @@ public class IBTestCases extends BaseTest {
             WebElement question0 = driver.findElement(By.id("question0"));
             question0.sendKeys("In what city were you married?");
             WebElement answer0 = driver.findElement(By.id("answer0"));
-            answer0.sendKeys("White Plains");
+            answer0.sendKeys("{Security Answer 1}");
             
             WebElement question1 = driver.findElement(By.id("question1"));
             question1.sendKeys("What is name of first boyfriend/girlfriend?");
             WebElement answer1 = driver.findElement(By.id("answer1"));
-            answer1.sendKeys("Sunny");
+            answer1.sendKeys("{Security Answer 2}");
             
             WebElement question2 = driver.findElement(By.id("question2"));
             question2.sendKeys("What is the name of a school you attended?");
             WebElement answer2 = driver.findElement(By.id("answer2"));
-            answer2.sendKeys("SBU");
+            answer2.sendKeys("{Security Answer 3}");
         }
         
         driver.findElement(By.id("continue")).click();
